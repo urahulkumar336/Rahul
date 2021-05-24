@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image map</title>
+	<script>
+		function Desktop() {
+  		alert("You clicked on Desktop");
+		}
+		function Keyboard() {
+  		alert("You clicked on Keyboard");
+		}
+		function Pendrive() {
+  		alert("You clicked on Pendrive");
+		}
+		function Mouse() {
+  		alert("You clicked on Mouse");
+		}
+		function CPU() {
+  		alert("You clicked on CPU");
+		}
+		function UPS() {
+  		alert("You clicked on UPS");
+		}
+</script>
+</head>
+<body>
+	<img src="computerparts.jpg" alt="Pc Parts" width="1280" height="720" usemap="#parts">
+	<map name="parts">
+		<area onclick="Desktop()" shape="poly" coords="421,55,885,51,889,371,705,379,711,419,733,439,575,441,603,417,605,377,417,373" href="https://en.wikipedia.org/wiki/Hard_disk_drive" title="Desktop" target="_blank" >
+		<area onclick="Keyboard()" shape="rect" coords="413,463,879,617" href="https://simple.wikipedia.org/wiki/Keyboard_(computer)" title="Keyboard" target="_blank">
+		<area onclick="Pendrive()" shape="rect" coords="537,633,761,697" href="https://en.wikipedia.org/wiki/USB_flash_drive" title="Pendrive" target="_blank">
+		<area onclick="Mouse()" shape="poly" coords="1089,263,1129,263,1193,287,1215,359,1109,463,1047,487,951,429,943,385,1043,279" href="https://en.wikipedia.org/wiki/Computer_mouse" title="Mouse"  target="_blank">
+		<area onclick="CPU()" shape="rect" coords="103,183,345,499" href="https://en.wikipedia.org/wiki/Central_processing_unit#:~:text=A%20central%20processing%20unit%20(CPU,the%20instructions%20in%20the%20program."
+		title="CPU" target="_blank">
+		<area onclick="UPS()" shape="rect" coords=" 119,553,335,681" href="https://en.wikipedia.org/wiki/Uninterruptible_power_supply" title="UPS" target="_blank">
+
+	</map>
+
+
+</body>
+</html>
